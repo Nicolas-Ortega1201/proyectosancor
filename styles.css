@@ -358,7 +358,6 @@ body {
   justify-content: center;
   gap: 15px;
   background-color: #29a71a;
-  max-width: 300px;
   padding: 8px 16px;
   margin: 0 auto;
   text-decoration: none;
@@ -772,6 +771,8 @@ body {
 }
 
 .plan000-card {
+  display: flex;
+  flex-direction: column;
   width: 300px;
   border: 2px solid #0073e6;
   border-radius: 10px;
@@ -780,6 +781,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 20px;
 }
+
+
+
+.plan000-content {
+  flex-grow: 1; /* Permite que el contenido ocupe el espacio disponible */
+}
+
 
 .plan000-header {
   background-color: #0073e6;
@@ -837,3 +845,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.planes {
+  display: flex;
+  gap: 20px;
+}
+
+
+
